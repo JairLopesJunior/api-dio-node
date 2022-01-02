@@ -11,6 +11,6 @@ router.get('/', (request: Request, response: Response) => {
     return response.json({mensagem: 'Bem vindo a nossa API'});
 });
 
-router.get('/usuarios', createUserController.handle);
+router.post('/usuarios', createUserController.handle);
 
 export { router };
